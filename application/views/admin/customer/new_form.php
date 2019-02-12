@@ -34,7 +34,7 @@
                             <div class="form-group">
 								<label for="customer_id">Id_customer</label>
 								<input class="form-control <?php echo form_error('customer_id') ? 'is-invalid':'' ?>"
-								 type="text" name="customer_id" placeholder="customer_id" />
+								 type="text" name="id" placeholder="customer_id" />
 								<div class="invalid-feedback">
 									<?php echo form_error('customer_id') ?>
 								</div>
@@ -43,7 +43,7 @@
                             <div class="form-group">
 								<label for="name">Name*</label>
 								<input class="form-control <?php echo form_error('name') ? 'is-invalid':'' ?>"
-								 type="text" name="name" placeholder="Customer name" />
+								 type="text" name="name" placeholder="name" />
 								<div class="invalid-feedback">
 									<?php echo form_error('name') ?>
 								</div>
@@ -52,7 +52,7 @@
 							<div class="form-group">
 								<label for="address">Address</label>
 								<input class="form-control <?php echo form_error('address') ? 'is-invalid':'' ?>"
-								 type="text" name="address" min="0" placeholder="Customer address" />
+								 type="text" name="address" min="0" placeholder="address" />
 								<div class="invalid-feedback">
 									<?php echo form_error('address') ?>
 								</div>

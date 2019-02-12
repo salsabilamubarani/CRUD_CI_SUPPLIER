@@ -1,9 +1,10 @@
-<?php defined('BASEPATH') OR exit('No direct script access allowed');
+<?php 
 
-class CUstomer_model extends CI_Model
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Customer_model extends CI_Model
 {
     private $_table = "customer";
-
     public $customer_id;
     public $name;
     public $address;
@@ -34,9 +35,10 @@ class CUstomer_model extends CI_Model
     public function save()
     {
         $post = $this->input->post();
-        $this->customer_id = uniqid();
+        $this->customer_id = $post["id"];
         $this->name = $post["name"];
         $this->address = $post["address"];
+        $this->db->insert($this->_table, $this);
     }
 
     public function update()
